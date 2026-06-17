@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sensor_id: MyString
+  machine_name: MyString
+  temperature: 1.5
+  voltage: 1.5
+  status: MyString
+
+two:
+  sensor_id: MyString
+  machine_name: MyString
+  temperature: 1.5
+  voltage: 1.5
+  status: MyString
