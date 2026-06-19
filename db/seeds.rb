@@ -23,4 +23,29 @@ factory_sensors.each do |sensor_data|
   Sensor.create!(sensor_data)
 end
 
-puts "🌱 Successfully seeded #{Sensor.count} IoT machine sensors into PostgreSQL!"
+puts " Successfully seeded #{Sensor.count} IoT machine sensors into PostgreSQL!"
+
+
+# CNC Mill #A-101        
+# CNC Machine
+
+# Hydraulic Press #B-204
+# Hydraulic Press
+
+# Laser Cutter #C-007
+# Laser Cutter
+
+# Conveyor Line #A-300
+# Conveyor Belt
+
+# Robotic Welder #D-012
+# Robotic Arm
+
+# Main Compressor #E-001
+# Compressor
+
+# Spot Welder #D-045
+# Welding Station
+
+# Drive Motor #A-220
+# Motor

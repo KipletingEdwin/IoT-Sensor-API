@@ -1,5 +1,13 @@
 
 class SimulationsController < ApplicationController
+
+  # GET /api/v1/simulations
+
+  def index
+    render json: Sensor.all, status: :ok
+  end
+
+
   # POST /api/v1/simulations/start
   def start
     test_duration = params.fetch(:duration, 15).to_i

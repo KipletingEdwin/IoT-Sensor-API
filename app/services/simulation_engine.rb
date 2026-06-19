@@ -1,3 +1,4 @@
+
 class SimulationEngine
   def self.start_stress_test(duration_seconds: 15, interval_ms: 50)
     interval_in_seconds = interval_ms / 1000.0
@@ -9,6 +10,7 @@ class SimulationEngine
     sensors = Sensor.all.to_a
 
     # Run a fixed number of times so it is guaranteed to stop
+
     total_broadcast_ticks.times do
       sensors.each do |sensor|
         temp_fluctuation = rand(-1.5..1.5)
