@@ -26,7 +26,7 @@ class SimulationEngine
         payload = {
           sensor_id: sensor.sensor_id,
           machine_name: sensor.machine_name,
-          location: sensor.location,
+          zone_identifier: sensor.zone_identifier,
           temperature: sensor.temperature,
           voltage: sensor.voltage,
           status: sensor.status,

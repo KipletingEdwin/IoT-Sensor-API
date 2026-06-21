@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_06_21_083944) do
+ActiveRecord::Schema[8.1].define(version: 2026_06_21_142407) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
   create_table "sensors", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.string "location", default: "Main Floor - Zone 1", null: false
     t.string "machine_name"
     t.string "sensor_id"
     t.string "status"
     t.float "temperature"
     t.datetime "updated_at", null: false
     t.float "voltage"
+    t.string "zone_identifier", default: "Main Floor - Zone 1", null: false
   end
 end

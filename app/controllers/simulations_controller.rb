@@ -4,7 +4,8 @@ class SimulationsController < ApplicationController
   # GET /api/v1/simulations
 
   def index
-    render json: Sensor.all, status: :ok
+    @sensors = Sensor.all
+    render json: @sensors, status: :ok
   end
 
 
